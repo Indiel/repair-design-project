@@ -1,0 +1,77 @@
+@font-face {
+    font-weight: 400;
+    font-family: "FuturaBookC";
+    font-style: normal;
+    src: url("../fonts/FuturaBookC.eot"), /* IE9 Compat Modes */
+        url("../fonts/FuturaBookC.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/FuturaBookC.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "FuturaDemiC";
+    font-style: normal;
+    src: url("../fonts/FuturaDemiC.eot"), /* IE9 Compat Modes */
+        url("../fonts/FuturaDemiC.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/FuturaDemiC.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "FuturaMediumC";
+    font-style: normal;
+    src: url("../fonts/FuturaMediumC.eot"), /* IE9 Compat Modes */
+        url("../fonts/FuturaMediumC.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/FuturaMediumC.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "FuturaMediumC";
+    font-style: normal;
+    src: url("../fonts/YesevaOne-Regular.eot"), /* IE9 Compat Modes */
+        url("../fonts/YesevaOne-Regular.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/YesevaOne-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+body {
+    width: 100%;
+    min-width: $mobile-width;
+    margin: 0;
+    padding: 0;
+
+    font-family: $font;
+}
+
+img {
+    // max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+    body {
+        min-width: $tablet-width;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    body {
+        min-width: $desktop-width;
+    }
+}
