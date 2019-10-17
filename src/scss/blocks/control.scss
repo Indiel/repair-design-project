@@ -1,0 +1,68 @@
+.control {
+    width: 100%;
+
+    color: #ffffff;
+    background-color: $neutral-color;
+}
+
+.control__wrapper {
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.control__title {
+    padding-bottom: 50px;
+    &::after {
+        content: url(../img/control-title-img.png);
+    }
+}
+
+.control__video {
+    padding: 40px 0 0 0;
+    width: 100%;
+}
+
+.control__text {
+    position: relative;
+    padding: 40px 0;
+
+    line-height: 1.8rem;
+    text-align: center;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 50px;
+        height: 2px;
+        background-color: $default-color;
+    }
+}
+
+.control__input:nth-child(2) {
+    margin-bottom: 60px;
+}
+
+.control__checkbox {
+    margin-top: 25px;
+}
+
+.control__submit {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1024px) {
+    .page-header {
+        height: 83px;
+        box-shadow: none;
+    }
+}

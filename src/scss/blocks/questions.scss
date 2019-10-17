@@ -1,0 +1,37 @@
+.questions {
+    width: 100%;
+    color: #ffffff;
+    background-color: $neutral-color;
+}
+
+.questions__wrapper {
+    padding: 0 0 45px;
+}
+
+.questions__title {
+    margin-bottom: 40px;
+}
+
+.questions__input {
+    margin-bottom: 60px;
+}
+
+.questions__checkbox {
+    margin: 21px 0 40px;
+}
+
+.questions__submit {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    // .measure {
+    //     display: none;
+    // }
+}
+
+@media (min-width: 1440px) {
+    // .measure {
+    //     display: none;
+    // }
+}

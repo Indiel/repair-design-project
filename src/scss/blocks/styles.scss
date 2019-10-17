@@ -1,0 +1,48 @@
+.styles {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ffffff 55%, $neutral-color 55%);
+}
+
+.styles__wrapper {
+    padding: 0 0 50px;
+}
+
+.styles__title {
+    margin-bottom: 25px;
+    color: $default-color;
+}
+
+.styles__list {
+    display: none;
+}
+
+.styles__img-list {
+    width: 400%;
+    display: flex;
+}
+
+.styles__img-item {
+    width: 25%;
+}
+
+.styles__img {
+    width: 100%;
+}
+
+.styles__prev {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.styles__next {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 1024px) {
+    // .measure {
+    //     display: none;
+    // }
+}

@@ -1,0 +1,28 @@
+.design-project {
+    width: 100%;
+    color: #ffffff;
+    background-color: $neutral-color;
+}
+
+.design-project__wrapper {
+    padding: 0 0 20px;
+}
+
+.design-project__title {
+    padding-bottom: 50px;
+    &::after {
+        content: url(../img/design-project-title-img.png);
+    }
+}
+
+@media (min-width: 1024px) {
+    // .measure {
+    //     display: none;
+    // }
+}
+
+@media (min-width: 1440px) {
+    // .measure {
+    //     display: none;
+    // }
+}

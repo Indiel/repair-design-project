@@ -1,0 +1,138 @@
+.header {
+    position: relative;
+    width: 100%;
+
+    color: #ffffff;
+    background: #252525 url(../img/header-bg.png) center no-repeat;
+    background-size: cover;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 14;
+}
+
+.header__wrapper {
+    padding: 85px 0 60px;
+}
+
+.header__instagram {
+    display: none;
+}
+
+.header__h1 {
+    margin: 0;
+
+    font-family: "YesevaOne", serif;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+
+    &--color {
+        color: $default-color;
+    }
+}
+
+.header__text {
+    margin: 16px 0 32px;
+
+    font-size: 1.3rem;
+    letter-spacing: 0.08rem;
+    line-height: 1.8rem;
+}
+
+.header__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__btn {
+    width: 100%;
+
+    &--transparent {
+        box-sizing: border-box;
+        margin-top: 26px;
+
+        background-color: transparent;
+        border: 1px solid #ffffff;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.header__btn-down {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .header__btn--hidden {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__btn-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__btn {
+        margin-right: 20px;
+        width: 207px;
+
+        &--transparent {
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        position: relative;
+        // margin-top: -1px;
+        height: calc(100vh - 131px);
+
+        display: flex;
+        align-items: center;
+        
+        background: $neutral-color url(../img/header-bg-desktop.png) center no-repeat;
+        background-size: cover;
+        box-shadow: none;
+    }
+
+    .header__wrapper {
+        padding: 0;
+    }
+
+    .header__text-wrapper {
+        padding-left: 65px;
+        width: 510px;
+    }
+
+    .header__btn-down {
+        @include reset-button;
+        display: block;
+
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        left: 0;
+
+        box-sizing: border-box;
+        padding-right: 40px;
+        width: 247px;
+        height: 97px;
+
+        font-family: "YesevaOne";
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        background: $neutral-color url(../img/header-btn-down.png) 80% center no-repeat;
+        background-color: $neutral-color;
+
+        z-index: 3;
+    }
+}

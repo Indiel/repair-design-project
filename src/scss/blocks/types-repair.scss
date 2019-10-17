@@ -1,0 +1,18 @@
+.types-repair {
+    width: 100%;
+}
+
+.types-repair__wrapper {
+    padding: 80px 0 15px;
+}
+
+.types-repair__title {
+    padding-bottom: 50px;
+    &::after {
+        content: url(../img/types-repair-title-img.png);
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
