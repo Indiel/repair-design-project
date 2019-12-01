@@ -2,14 +2,133 @@
     display: none;
 }
 
-@media (min-width: 1024px) {
-    // .measure {
-    //     display: none;
-    // }
-}
-
 @media (min-width: 1440px) {
-    // .measure {
-    //     display: none;
-    // }
+    .clients {
+        margin-top: -2px;
+        display: block;
+        background-color: #fff;
+    }
+
+    .clients__wrapper {
+        padding-bottom: 120px;
+    }
+
+    .clients__title {
+        padding-bottom: 50px;
+        &::after {
+            content: url(../img/clients-title-img.png);
+        }
+    }
+
+    .clients__description {
+        margin: 16px auto;
+        width: 475px;
+
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        text-align: center;
+    }
+
+    .clients__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .clients__item {
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        box-sizing: border-box;
+        margin: 0;
+        padding: 24px 20px 80px;
+        width: 30%;
+
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    }
+
+    .clients__name {
+        margin: 0 20px;
+        width: 60%;
+
+        font-family: $font-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+
+        color: #181818;
+    }
+
+    .clients__review {
+        font-size: 0.75rem;
+        line-height: 1.8rem;
+        color: #959595;
+    }
+
+    .clients__parameters {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(50%);
+
+        display: flex;
+    
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 295px;
+        height: 54px;
+    
+        font-family: 'YesevaOne';
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffffff;
+    
+        background-color: $default-color;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    }
+
+    .clients__area {
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 18px 0 18px 50px;
+        width: 50%;
+        height: 100%;
+
+        border-right: 1px solid #ffffff;
+
+        &::before {
+            content: url(../img/clients-area.png);
+
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-40%);
+        }
+    }
+
+    .clients__days {
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 18px 0 18px 30px;
+        width: 50%;
+        height: 100%;
+
+        &::before {
+            content: url(../img/clients-days.png);
+
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-45%);
+        }
+    }
 }

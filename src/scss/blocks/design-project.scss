@@ -16,13 +16,25 @@
 }
 
 @media (min-width: 1024px) {
-    // .measure {
-    //     display: none;
-    // }
+    .design-project__p {
+        margin: 0 auto;
+        width: 55%;
+        text-align: center;
+        color: #ffffff;
+    }
 }
 
 @media (min-width: 1440px) {
-    // .measure {
-    //     display: none;
-    // }
+    .design-project {
+        color: #000000;
+        background-image: linear-gradient(to bottom, #ffffff 60%, $neutral-color 60%);
+    }
+
+    .design-project__wrapper {
+        padding: 180px 0 20px;
+    }
+
+    .design-project__p {
+        color: #363636;
+    }
 }

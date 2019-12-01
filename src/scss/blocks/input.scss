@@ -85,13 +85,17 @@
     }
 }
 
-// @media (min-width: 480px) {
-//     html, body {
-//         min-width: 480px;
-//         font-size: 15px;
-//     }
+@media (min-width: 1440px) {
+    .input {
+        font-size: 0.9rem;
+    }
 
-//     .wrapper {
-//         margin: 0 12%;
-//     }
-// }
+    .input__label {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+    .checkbox__label {
+        font-size: 0.8rem;
+    }
+}

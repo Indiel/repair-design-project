@@ -34,9 +34,6 @@
 
 .contacts__map-img {
     width: 375px;
-    // width: 100%;
-    // position: absolute;
-
 }
 
 .contacts__address {
@@ -99,14 +96,41 @@
     }
 }
 
-@media (min-width: 1024px) {
-    // .measure {
-    //     display: none;
-    // }
-}
-
 @media (min-width: 1440px) {
-    // .measure {
-    //     display: none;
-    // }
+    .contacts {
+        background-color: #fff;
+        background-image: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, 0.85) 100%), url(../img/contacts-bg.png);
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover;
+    }
+
+    .contacts__wrapper {
+        padding: 300px 0 65px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__address {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .contacts__list {
+        margin: 40px 0;
+    }
+
+    .contacts__map-wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 75%;
+        height: auto;
+        order: 3;
+    }
+
+    .contacts__map-img {
+        width: 100%;
+        height: auto;
+    }
 }

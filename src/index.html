@@ -23,19 +23,19 @@
                             <a>Home</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="photo.html">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="form.html">MEASUREMENT</a>
+                            <a href="#measurement">MEASUREMENT</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">TEAM</a>
+                            <a href="#team">TEAM</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">REVIEWS</a>
+                            <a href="#reviews">REVIEWS</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">CONTACTS</a>
+                            <a href="#contacts">CONTACTS</a>
                         </li>
                     </ul>
                 </div>
@@ -50,80 +50,64 @@
     <main>
         <section class="header">
             <div class="header__wrapper wrapper">
-                <a class="header__instagram" href="">Instagram</a>
+                <a class="header__instagram" href=""><span>Instagram</span></a>
                 <div class="header__text-wrapper">
                     <h1 class="header__h1">Turnkey Repair in the city of <span class="header__h1--color">Rostov-on-Don</span></h1>
                     <p class="header__text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
                     <div class="header__btn-wrapper">
                         <button class="header__btn button" type="button">CALCULATE THE COST</button>
-                        <button class="header__btn header__btn--transparent button" type="button"><span class="header__btn--hidden">SUBMIT YOUR </span> APPLICATION</button>
+                        <button class="header__btn button button--transparent" type="button"><span class="header__btn--hidden">SUBMIT YOUR </span> APPLICATION</button>
                     </div>
                 </div>
                 <button class="header__btn-down" type="button">Scroll down</button>
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects__wrapper wrapper slider">
                 <div class="projects__tabs">
-                    <button class="projects__tab" type="button">Rostov-on-Don, Admiral</button>
+                    <button class="projects__tab projects__tab--current" type="button">Rostov-on-Don, Admiral</button>
                     <button class="projects__tab" type="button">Sochi Thieves</button>
                     <button class="projects__tab" type="button">Rostov-on-Don Patriotic</button>
                 </div>
-                <h2 class="projects__title title">Completed projects</h2>
+                <h2 class="projects__title title">Completed<br>projects</h2>
+                <p class="projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                 <div class="projects__list-wrapper slider__list-wrapper">
-                    <div class="projects__list slider__list">
-                        <div class="projects__item slider__item">
-                            <p class="projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                    <ul class="projects__list slider__list">
+                        <li class="projects__item projects__item--current active slider__item">
                             <img src="./img/projects-img1.png" class="projects__image" alt="Interior photo">
-                            <ul class="projects__description-list">
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">City:</h4>
-                                    <p class="projects__description-text">Rostov-on-Don <br>LCD admiral</p>
-                                </li>
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">Repair time:</h4>
-                                    <p class="projects__description-text">3.5 months</p>
-                                </li>
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">Apartment area:</h4>
-                                    <p class="projects__description-text">81 m2</p>
-                                </li>
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">Repair Cost:</h4>
-                                    <p class="projects__description-text">Upon request</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="projects__item slider__item">
-                            <p class="projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                        </li>
+                        <li class="projects__item slider__item">
                             <img src="img/styles-img-1.2-mobile.png" class="projects__image" alt="Interior photo">
-                            <ul class="projects__description-list">
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">City:</h4>
-                                    <p class="projects__description-text">Rostov-on-Don LCD admiral</p>
-                                </li>
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">Repair time:</h4>
-                                    <p class="projects__description-text">3.5 months</p>
-                                </li>
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">Apartment area:</h4>
-                                    <p class="projects__description-text">81 m2</p>
-                                </li>
-                                <li class="projects__description-item">
-                                    <h4 class="projects__description-title">Repair Cost:</h4>
-                                    <p class="projects__description-text">Upon request</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="projects__prev slider__prev" type="button"></button>
-                        <button class="projects__next slider__next" type="button"></button>
-                    </div>
+                        </li>
+                        <li class="projects__item slider__item">
+                            <img src="img/styles-img-1.4-mobile.png" class="projects__image" alt="Interior photo">
+                        </li>
+                    </ul>
+                    <button class="projects__prev slider__prev" type="button"></button>
+                    <button class="projects__next slider__next" type="button"></button>
                 </div>
+                <ul class="projects__description-list">
+                    <li class="projects__description-item">
+                        <h4 class="projects__description-title">City:</h4>
+                        <p class="projects__description-text">Rostov-on-Don <br>LCD admiral</p>
+                    </li>
+                    <li class="projects__description-item">
+                        <h4 class="projects__description-title">Repair time:</h4>
+                        <p class="projects__description-text">3.5 months</p>
+                    </li>
+                    <li class="projects__description-item">
+                        <h4 class="projects__description-title">Apartment area:</h4>
+                        <p class="projects__description-text">81 m2</p>
+                    </li>
+                    <li class="projects__description-item">
+                        <h4 class="projects__description-title">Repair Cost:</h4>
+                        <p class="projects__description-text">Upon request</p>
+                    </li>
+                </ul>
                 <div class="projects__toggles slider__toggles">
                     <button class="slider__toggle-prev" type="button"></button>
-                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle slider__toggle--current" type="button"></button>
                     <button class="slider__toggle" type="button"></button>
                     <button class="slider__toggle" type="button"></button>
                     <button class="slider__toggle-next" type="button"></button>
@@ -134,35 +118,43 @@
         <section class="control">
             <div class="control__wrapper wrapper">
                 <h2 class="control__title title">Online control</h2>
-                <video class="control__video" src="" poster="img/control-video-poster.png">
-                    <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
-                </video>
+                <div class="control__video-wrapper">
+                    <video class="control__video" src="" poster="img/control-video-poster.png">
+                        <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
+                </div>
                 <p class="control__text">
                     At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
                 </p>
                 <form class="control__form" action="" method="post">
-                    <label class="input__label" for="control__input-name">Name</label>
-                    <input class="control__input input" type="text" name="name" id="control__input-name" placeholder="What is your name:">
+                    <div class="control__input-wrapper">
+                        <label class="control__label input__label" for="control__input-name">Name</label>
+                        <input class="control__input input" type="text" name="name" id="control__input-name" placeholder="What is your name:">
+                    </div>
                     
-                    <label class="input__label" for="control__input-tel">Phone</label>
-                    <input class="control__input input" type="tel" name="tel" id="control__input-tel" placeholder="Your phone number:">
-                    
-                    <input class="checkbox" type="checkbox" name="checkbox" id="control__input-checkbox">
-                    <label class="control__checkbox checkbox__label" for="control__input-checkbox">I agree to the processing of personal data</label>
-                    
+                    <div class="control__input-wrapper">
+                        <label class="control__label input__label" for="control__input-tel">Phone</label>
+                        <input class="control__input input" type="tel" name="tel" id="control__input-tel" placeholder="Your phone number:">
+                    </div>
+
+                    <div class="control__checkbox-wrapper">
+                        <input class="checkbox" type="checkbox" name="checkbox" id="control__input-checkbox">
+                        <label class="control__checkbox checkbox__label" for="control__input-checkbox">I agree to the processing of personal data</label>
+                    </div>
+
                     <input class="control__submit button" type="submit" value="Submit">
                 </form>
             </div>
         </section>
 
-        <section class="types-repair">
+        <section class="types-repair" id="measurement">
             <div class="types-repair__wrapper wrapper">
                 <h2 class="types-repair__title title">TYPES OF REPAIR</h2>
                 <ul class="types-repair__list card-list">
                     <li class="card-list__item">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="img/types-repair-img1.png">
+                            <source media="(min-width: 768px)" srcset="img/types-repair-img1.png">
                             <img class="card-list__img" src="img/types-repair-img1-mobile.png" alt="Type of repair photo">
                         </picture>
                         <!-- <img class="card-list__img" src="img/types-repair-img1.png" alt="Type of repair photo"> -->
@@ -182,7 +174,7 @@
                     </li>
                     <li class="card-list__item">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="img/types-repair-img2.png">
+                            <source media="(min-width: 768px)" srcset="img/types-repair-img2.png">
                             <img class="card-list__img" src="img/types-repair-img2-mobile.png" alt="Type of repair photo">
                         </picture>
                         <!-- <img class="card-list__img" src="img/types-repair-img2.png" alt="Type of repair photo"> -->
@@ -202,7 +194,7 @@
                     </li>
                     <li class="card-list__item">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="img/types-repair-img3.png">
+                            <source media="(min-width: 768px)" srcset="img/types-repair-img3.png">
                             <img class="card-list__img" src="img/types-repair-img3-mobile.png" alt="Type of repair photo">
                         </picture>
                         <!-- <img class="card-list__img" src="img/types-repair-img3.png" alt="Type of repair photo"> -->
@@ -225,70 +217,72 @@
         </section>
 
         <section class="measure">
-            <h2 class="visually-hidden">Measure</h2>
-            <div class="measure__description">
-                <p class="measure__p1">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
-                <p class="measure__p2">Free metering</p>
-                <p class="measure__p3">Free consultation</p>
-                <p class="measure__p4">Get a cost estimate and the timing of your future repairs</p>
+            <div class="measure-wrapper wrapper">
+                <h2 class="visually-hidden">Measure</h2>
+                <div class="measure__description">
+                    <p class="measure__p measure__p--1">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
+                    <p class="measure__p measure__p--2">Free metering</p>
+                    <p class="measure__p measure__p--3">Free consultation</p>
+                    <p class="measure__p measure__p--4">Get a cost estimate and the timing of your future repairs</p>
+                </div>
+                <form class="measure__form" action="" method="post">
+                    <h3 class="measure__form-title">Leave a request for free<br>departure of the measurer</h3>
+
+                    <label class="input__label" for="measure__input-name">Name</label>
+                    <input class="measure__input input" type="text" name="name" id="measure__input-name" placeholder="What is your name:">
+                    
+                    <label class="input__label" for="measure__input-tel">Phone</label>
+                    <input class="measure__input input" type="tel" name="tel" id="measure__input-tel" placeholder="Your phone number:">
+
+                    <label class="input__label" for="measure__input-email">Email</label>
+                    <input class="measure__input input" type="email" name="email" id="measure__input-email" placeholder="Your email:">
+                    
+                    <input class="checkbox" type="checkbox" name="checkbox" id="measure__input-checkbox">
+                    <label class="measure__checkbox checkbox__label" for="measure__input-checkbox">I agree to the processing of personal data</label>
+                    
+                    <input class="measure__submit button" type="submit" value="Call the measurer">
+                </form>
+                <p class="measure__discount">Help save 10 - 20% of the cost of materials</p>
             </div>
-            <form class="measure__form" action="" method="post">
-                <h3 class="measure__form-title"></h3>
-
-                <label class="input__label" for="measure__input-name">Name</label>
-                <input class="measure__input input" type="text" name="name" id="measure__input-name" placeholder="What is your name:">
-                
-                <label class="input__label" for="measure__input-tel">Phone</label>
-                <input class="measure__input input" type="tel" name="tel" id="measure__input-tel" placeholder="Your phone number:">
-
-                <label class="input__label" for="measure__input-email">Email</label>
-                <input class="measure__input input" type="email" name="email" id="measure__input-email" placeholder="Your email:">
-                
-                <input class="checkbox" type="checkbox" name="checkbox" id="measure__input-checkbox">
-                <label class="measure__checkbox checkbox__label" for="measure__input-checkbox">I agree to the processing of personal data</label>
-                
-                <input class="measure__submit button" type="submit" value="Call the measurer">
-            </form>
-            <p class="measure__discount">Help save 10 - 20% of the cost of materials</p>
         </section>
 
         <section class="styles">
             <div class="styles__wrapper wrapper">
-                <h2 class="styles__title title">We realize your wildest fantasies</h2>
+                <h2 class="styles__title title">We realize your<br>wildest fantasies</h2>
                 <ul class="styles__list">
-                    <li class="styles__item">American classic</li>
-                    <li class="styles__item">Empire</li>
-                    <li class="styles__item">Classical</li>
-                    <li class="styles__item">Loft</li>
-                    <li class="styles__item">Minimalism</li>
-                    <li class="styles__item">Provence</li>
-                    <li class="styles__item">Romanticism</li>
-                    <li class="styles__item">Scandinavian style</li>
-                    <li class="styles__item">Mediterranean style</li>
-                    <li class="styles__item">High tech</li>
-                    <li class="styles__item">Eclecticism</li>
+                    <li class="styles__item styles__item--current"><span>American classic</span></li>
+                    <li class="styles__item"><span tabindex="0">Empire</span></li>
+                    <li class="styles__item"><span tabindex="0">Classical</span></li>
+                    <li class="styles__item"><span tabindex="0">Loft</span></li>
+                    <li class="styles__item"><span tabindex="0">Minimalism</span></li>
+                    <li class="styles__item"><span tabindex="0">Provence</span></li>
+                    <li class="styles__item"><span tabindex="0">Romanticism</span></li>
+                    <li class="styles__item"><span tabindex="0">Scandinavian style</span></li>
+                    <li class="styles__item"><span tabindex="0">Mediterranean style</span></li>
+                    <li class="styles__item"><span tabindex="0">High tech</span></li>
+                    <li class="styles__item"><span tabindex="0">Eclecticism</span></li>
                 </ul>
                 <div class="styles__img-list-wrapper slider__list-wrapper">
                     <div class="styles__img-list slider__list">
-                        <div class="styles__img-item">
+                        <div class="styles__img-item styles__img-item--1">
                             <picture>
                                 <source media="(min-width: 1024px)" srcset="img/styles-img-1.1.png">
                                 <img class="styles__img" src="img/styles-img-1.1-mobile.png" alt="Photos in style American classic">
                             </picture>
                         </div>
-                        <div class="styles__img-item">
+                        <div class="styles__img-item styles__img-item--2">
                             <picture>
                                 <source media="(min-width: 1024px)" srcset="img/styles-img-1.2.png">
                                 <img class="styles__img" src="img/styles-img-1.2-mobile.png" alt="Photos in style American classic">
                             </picture>
                         </div>
-                        <div class="styles__img-item">
+                        <div class="styles__img-item styles__img-item--3">
                             <picture>
                                 <source media="(min-width: 1024px)" srcset="img/styles-img-1.3.png">
                                 <img class="styles__img" src="img/styles-img-1.3-mobile.png" alt="Photos in style American classic">
                             </picture>
                         </div>
-                        <div class="styles__img-item">
+                        <div class="styles__img-item styles__img-item--4">
                             <picture>
                                 <source media="(min-width: 1024px)" srcset="img/styles-img-1.4.png">
                                 <img class="styles__img" src="img/styles-img-1.4-mobile.png" alt="Photos in style American classic">
@@ -315,7 +309,7 @@
                 <ul class="design-project__list card-list">
                     <li class="card-list__item">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="img/types-repair-img1.png">
+                            <source media="(min-width: 768px)" srcset="img/types-repair-img1.png">
                             <img class="card-list__img" src="img/types-repair-img1-mobile.png" alt="Design project photo">
                         </picture>
                         <!-- <img class="card-list__img" src="" alt="Design project photo"> -->
@@ -332,7 +326,7 @@
                     </li>
                     <li class="card-list__item">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="img/types-repair-img2.png">
+                            <source media="(min-width: 768px)" srcset="img/types-repair-img2.png">
                             <img class="card-list__img" src="img/types-repair-img2-mobile.png" alt="Design project photo">
                         </picture>
                         <!-- <img class="card-list__img" src="" alt="Design project photo"> -->
@@ -352,7 +346,7 @@
                     </li>
                     <li class="card-list__item">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="img/types-repair-img3.png">
+                            <source media="(min-width: 768px)" srcset="img/types-repair-img3.png">
                             <img class="card-list__img" src="img/types-repair-img3-mobile.png" alt="Design project photo">
                         </picture>
                         <!-- <img class="card-list__img" src="" alt="Design project photo"> -->
@@ -382,15 +376,15 @@
         <section class="steps">
             <div class="steps__wrapper wrapper">
                 <p class="steps__description">How we are working</p>
-                <h2 class="steps__title title">6 steps to the goal</h2>
+                <h2 class="steps__title title">6 steps to<br>the goal</h2>
                 <div class="steps__slider-wrapper slider">
                     <div class="steps__tabs">
-                        <button class="steps__tab" type="button"><span class="steps__tab-number">01</span><br>Departure to room measurements</button>
-                        <button class="steps__tab" type="button"><span class="steps__tab-number">02</span><br>Compilation estimates</button>
-                        <button class="steps__tab" type="button"><span class="steps__tab-number">03</span><br>Development project design</button>
+                        <button class="steps__tab steps__tab--current" type="button"><span class="steps__tab-number">01</span><br>Departure to<br>room measurements</button>
+                        <button class="steps__tab" type="button"><span class="steps__tab-number">02</span><br>Compilation<br>estimates</button>
+                        <button class="steps__tab" type="button"><span class="steps__tab-number">03</span><br>Development<br>project design</button>
                         <button class="steps__tab" type="button"><span class="steps__tab-number">04</span><br>Purchasing Supplies</button>
                         <button class="steps__tab" type="button"><span class="steps__tab-number">05</span><br>Repair finishing work</button>
-                        <button class="steps__tab" type="button"><span class="steps__tab-number">06</span><br>Acceptance of delivery of works</button>
+                        <button class="steps__tab" type="button"><span class="steps__tab-number">06</span><br>Acceptance of<br>delivery of works</button>
                     </div>
                     <div class="steps__list-wrapper slider__list-wrapper">
                         <div class="steps__list slider__list">
@@ -408,7 +402,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="steps__img" src="" alt="">
+                    <img class="steps__img" src="img/steps-img.png" alt="">
                     <div class="steps__toggles slider__toggles">
                         <button class="slider__toggle-prev" type="button"></button>
                         <button class="slider__toggle" type="button"></button>
@@ -423,7 +417,7 @@
             </div>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="team__wrapper wrapper">
                 <h2 class="team__title title">Our team</h2>
                 <p class="team__description">Our team has helped to become happier for more than 500 families and we are not going to stop</p>
@@ -473,13 +467,13 @@
             </div>
         </section>
 
-        <section class="clients">
+        <section class="clients" id="reviews">
             <div class="clients__wrapper wrapper">
                 <h2 class="clients__title title">Our clients</h2>
-                <p class="clients__description"></p>
+                <p class="clients__description">80% of our customers recommend us to their friends and family.</p>
                 <div class="clients__list">
                     <blockquote class="clients__item">
-                        <img class="clients__photo" src="" alt="Clients photo">
+                        <img class="clients__photo" src="img/clients-photo-1.png" alt="Clients photo">
                         <cite class="clients__name">Fedosova Maria Konstantinovna</cite>
                         <p class="clients__review">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="clients__parameters">
@@ -488,7 +482,7 @@
                         </div>
                     </blockquote>
                     <blockquote class="clients__item">
-                        <img class="clients__photo" src="" alt="Clients photo">
+                        <img class="clients__photo" src="img/clients-photo-2.png" alt="Clients photo">
                         <cite class="clients__name">Afanasyev Sergey Alexandrovich</cite>
                         <p class="clients__review">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="clients__parameters">
@@ -497,7 +491,7 @@
                         </div>
                     </blockquote>
                     <blockquote class="clients__item">
-                        <img class="clients__photo" src="" alt="Clients photo">
+                        <img class="clients__photo" src="img/clients-photo-3.png" alt="Clients photo">
                         <cite class="clients__name">Kiriev Egor Leonidovich</cite>
                         <p class="clients__review">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="clients__parameters">
@@ -513,24 +507,32 @@
             <div class="questions__wrapper wrapper">
                 <h2 class="questions__title title">Have any questions?</h2>
                 <form class="questions__form" action="" method="post">
-                    <label class="input__label" for="questions__input-name">Name</label>
-                    <input class="questions__input input" type="text" name="name" id="questions__input-name" placeholder="What is your name:">
-                    
-                    <label class="input__label" for="questions__input-tel">Phone</label>
-                    <input class="questions__input input" type="tel" name="tel" id="questions__input-tel" placeholder="Your phone number:">
-    
-                    <label class="input__label" for="questions__textarea-email">Question</label>
-                    <textarea class="questions__textarea textarea" name="question" id="questions__textarea" rows="1" placeholder="I want to know:"></textarea>
-                    
-                    <input class="checkbox" type="checkbox" name="checkbox" id="questions__input-checkbox">
-                    <label class="questions__checkbox checkbox__label" for="questions__input-checkbox">I agree to the processing of personal data</label>
+                    <div class="questions__input-wrapper">
+                        <label class="input__label" for="questions__input-name">Name</label>
+                        <input class="questions__input input" type="text" name="name" id="questions__input-name" placeholder="What is your name:">
+                    </div>
+
+                    <div class="questions__input-wrapper">
+                        <label class="input__label" for="questions__input-tel">Phone</label>
+                        <input class="questions__input input" type="tel" name="tel" id="questions__input-tel" placeholder="Your phone number:">
+                    </div>
+
+                    <div class="questions__input-wrapper">
+                        <label class="input__label" for="questions__textarea-email">Question</label>
+                        <textarea class="questions__textarea textarea" name="question" id="questions__textarea" rows="1" placeholder="I want to know:"></textarea>
+                    </div>
+
+                    <div class="questions__input-wrapper">
+                        <input class="checkbox" type="checkbox" name="checkbox" id="questions__input-checkbox">
+                        <label class="questions__checkbox checkbox__label" for="questions__input-checkbox">I agree to the processing of personal data</label>
+                    </div>
                     
                     <input class="questions__submit button" type="submit" value="Submit">
                 </form>
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts__wrapper wrapper">
                 <h2 class="visually-hidden">Contacts</h2>
                 <p class="contacts__address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel<br>+7 (928) 768 32 29</p>
@@ -568,19 +570,19 @@
                             <a>Home</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="photo.html">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="form.html">MEASUREMENT</a>
+                            <a href="#measurement">MEASUREMENT</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">TEAM</a>
+                            <a href="#team">TEAM</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">REVIEWS</a>
+                            <a href="#reviews">REVIEWS</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">CONTACTS</a>
+                            <a href="#contacts">CONTACTS</a>
                         </li>
                     </ul>
                 </div>

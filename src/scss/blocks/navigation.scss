@@ -1,3 +1,8 @@
+.navigation {
+    font-size: 14px;
+    line-height: 16px;
+}
+
 .navigation__logo {
     @include reset-link;
     color: $default-color;
@@ -17,5 +22,22 @@
     .navigation__a-tel {
         border-bottom: 1px solid $default-color;
         color: $default-color;
+    }
+}
+
+@media (min-width: 1440px) {
+    .navigation__tel {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation__a-tel {
+        margin-right: 45px;
+    }
+
+    .navigation__btn-tel {
+        display: block;
+        width: 161px;
+        height: 37px;
     }
 }

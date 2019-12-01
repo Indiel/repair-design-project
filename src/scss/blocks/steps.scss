@@ -2,14 +2,160 @@
     display: none;
 }
 
-@media (min-width: 1024px) {
-    // .measure {
-    //     display: none;
-    // }
-}
-
 @media (min-width: 1440px) {
-    // .measure {
-    //     display: none;
-    // }
+    .steps {
+        display: block;
+        width: 100%;
+
+        color: #ffffff;
+    }
+
+    .steps__wrapper {
+        position: relative;
+        padding: 160px 0 50px;
+    }
+
+    .steps__tabs {
+        position: absolute;
+        top: 50px;
+        left: 40%;
+
+        width: 60%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        justify-content: space-between;
+    }
+
+    .steps__tab {
+        @include reset-button;
+
+        margin-bottom: 35px;
+        width: 140px;
+
+        font-family: $font-serif;
+        font-size: 0.7rem;
+        text-align: left;
+
+        color: rgba(255, 255, 255, 0.3); 
+
+        transition: 0.5s;
+
+        &--current {
+            color: #ffffff;
+
+            .steps__tab-number {
+                color: #ffffff;
+                border-bottom: 1px solid $default-color;
+            }
+        }
+    }
+
+    .steps__tab-number {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 0 0 3px 0;
+
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        transition: 0.5s;
+    }
+
+    .steps__description {
+        position: absolute;
+        left: 0;
+        top: -20px;
+
+        font-family: $font-demi;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+
+    .steps__title {
+        position: absolute;
+        left: 0;
+        top: 30px;
+
+        padding: 0;
+        width: 420px;
+
+        font-size: 1.35rem;
+        line-height: 1.8rem;
+        text-align: left;
+        color: $default-color;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            right: 0;
+            bottom: 16px;
+
+            width: 92px;
+            height: 2px;
+
+            background-color: $default-color;
+        }
+    }
+
+    .steps__list-wrapper {
+        width: 30%;
+        overflow-x: hidden;
+    }
+
+    .steps__list {
+        display: flex;
+        width: 200%;
+    }
+
+    .steps__item {
+        width: 50%;
+        height: 400px;
+        margin-right: 10px;
+    }
+
+    .steps__counter {
+        margin-bottom: 30px;
+        font-family: $font-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .steps__item-title {
+        font-family: $font-serif;
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+        color: $default-color;
+    }
+
+    .steps__item-description {
+        margin: 20px 0;
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        color: #FFFFFF;
+    }
+
+    .steps__img {
+        position: absolute;
+        bottom: 0;
+        left: 70%;
+        transform: translateX(-50%);
+
+        width: 766px;
+        height: auto;
+    }
+
+    .steps__toggles {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+    }
 }

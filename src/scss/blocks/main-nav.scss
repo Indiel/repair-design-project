@@ -24,14 +24,30 @@
     .main-nav__item a {
         @include reset-link;
 
-        display: block;
-        padding: 33px 15px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
         height: 100%;
 
         font-family: $font;
-        font-size: 14px;
-        line-height: 16px;
         font-weight: 400;
         color: #ffffff;
+
+        outline: none;
+        transition: 0.5s;
+
+        &:hover {
+            color: $default-color;
+        }
+    }
+
+    .main-nav__item--active a {
+        color: $default-color;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-nav__item a {
+        padding: 0 23px;
     }
 }

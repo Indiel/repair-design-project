@@ -1,5 +1,7 @@
 .types-repair {
+    margin-top: -3px;
     width: 100%;
+    background-color: #fff;
 }
 
 .types-repair__wrapper {
@@ -13,6 +15,12 @@
     }
 }
 
-@media (min-width: 1024px) {
-    
+@media (min-width: 1440px) {
+    .types-repair__wrapper {
+        padding: 50px 0 125px;
+    }
+
+    .types-repair__list {
+        margin: 20px 0 0;
+    }
 }

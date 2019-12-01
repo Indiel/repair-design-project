@@ -2,14 +2,127 @@
     display: none;
 }
 
-@media (min-width: 1024px) {
-    // .measure {
-    //     display: none;
-    // }
-}
-
 @media (min-width: 1440px) {
-    // .measure {
-    //     display: none;
-    // }
+    .measure {
+        display: block;
+        margin-top: -2px;
+
+        background-color: #ffffff;
+    }
+
+    .measure-wrapper {
+        position: relative;
+        margin-left: 0;
+        padding-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .measure__description {
+        position: absolute;
+
+        box-sizing: border-box;
+        padding-left: 402px;
+        width: 60%;
+        height: 75%;
+
+        background: url(../img/measure-img.png) left center no-repeat;
+        background-size: auto 90%;
+    }
+
+    .measure__p {
+        margin-right: 50px;
+        font-size: 0.9rem;
+        line-height: 1.05rem;
+
+        color: #363636;
+
+        &--1 {
+            margin-top: 145px;
+        }
+
+        &--2 {
+            margin-left: 70px;
+            margin-top: 75px;
+        }
+
+        &--3 {
+            margin-left: 90px;
+            margin-top: 130px;
+        }
+
+        &--4 {
+            margin-left: 30px;
+            margin-top: 125px;
+        }
+    }
+
+    .measure__form {
+        box-sizing: border-box;
+        margin: 105px 0 40px auto;
+        padding: 28px 50px;
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: $neutral-color;
+    }
+
+    .measure__form-title {
+        margin: 0 0 40px;
+
+        font-family: $font-demi;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .measure__input {
+        margin-bottom: 48px;
+
+        &:nth-child(7) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .measure__checkbox {
+        color: #ffffff;
+    }
+
+    .measure__submit {
+        margin: 40px 0 0 auto;
+        width: 215px;
+    }
+
+    .measure__discount {
+        position: relative;
+
+        box-sizing: border-box;
+        margin: 0 0 0 auto;
+        padding: 0 120px 0;
+        width: 40%;
+
+        font-family: $font-demi;
+        color: $default-color;
+
+        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+
+            width: 72px;
+            height: 72px;
+
+            background: $default-color url(../img/measure-discount.png) center no-repeat;
+            border-radius: 50%;
+        }
+    }
 }

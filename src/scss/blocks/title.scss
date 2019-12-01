@@ -2,19 +2,16 @@
     position: relative;
 
     margin: 0 auto;
-    // padding-bottom: 50px;
     width: 70%;
 
     font-family: "YesevaOne", serif;
     font-size: 1.6rem;
-    line-height: 2.3rem;
+    line-height: 1.8rem;
     letter-spacing: -0.07rem;
     text-transform: uppercase;
     text-align: center;
 
     &::after {
-        // content: url(../img/control-title-img.png);
-
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -24,13 +21,8 @@
     }
 }
 
-// @media (min-width: 480px) {
-//     html, body {
-//         min-width: 480px;
-//         font-size: 15px;
-//     }
-
-//     .wrapper {
-//         margin: 0 12%;
-//     }
-// }
+@media (min-width: 1440px) {
+    .title {
+        font-size: 1rem;
+    }
+}
