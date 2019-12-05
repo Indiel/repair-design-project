@@ -189,8 +189,14 @@
         font-size: 0.7rem;
         font-weight: 700;
         text-transform: uppercase;
+        outline: none;
 
         color: rgba(255, 255, 255, 0.3);
+
+        &:hover,
+        &:focus {
+            text-shadow: 0px 0px 10px rgba(227, 184, 115, 0.7);
+        }
 
         &--current {
             color: $default-color;

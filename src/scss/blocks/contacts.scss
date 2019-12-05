@@ -49,6 +49,10 @@
     order: 2;
 }
 
+.contacts__a-tel {
+    @include reset-link;
+}
+
 .contacts__list {
     @include reset-list;
 
@@ -66,6 +70,8 @@
     border-radius: 50%;
     background-color: $default-color;
 
+    transition: 0.5s;
+
     a {
         display: block;
         width: 100%;
@@ -82,6 +88,12 @@
         background-image: url(../img/contacts-instagram.png);
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     }
 }
 

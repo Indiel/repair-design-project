@@ -6,7 +6,7 @@
     .page-footer {
         display: block;
 
-        position: relative;
+        position: absolute;
         height: 83px;
         width: 100%;
 
@@ -22,7 +22,6 @@
         align-items: center;
     
         font-family: $font-demi;
-        font-size: 0.85rem;
         text-transform: uppercase;
     }
 }
